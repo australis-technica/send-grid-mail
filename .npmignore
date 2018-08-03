@@ -1,0 +1,16 @@
+built/
+test/
+.secrets/
+src/
+node_modules/
+tsconfig*
+test/
+*.tgz
+.npmignore
+tslint*
+yarn.lock
+*.dev.env
+*.prod.env
+*.test.env
+templates/
+more_templates/

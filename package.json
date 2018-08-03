@@ -1,0 +1,64 @@
+{
+  "name": "@australis/send-grid-mail",
+  "version": "0.1.0",
+  "description": "load env with dotenv based on NODE_ENV",
+  "private": false,
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --ci --env=node",
+    "build:templates": "tsc -p ./templates",
+    "build": "npm run build:templates && tsc -p .",
+    "clean": "rimraf lib",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "keywords": [],
+  "author": "daniel@australis-technica.com",
+  "license": "MIT",
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.test.json"
+      }
+    },
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/test/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "jest": "22.4.3",
+    "rimraf": "^2.6.2",
+    "ts-jest": "22.4.4",
+    "ts-node": "^5.0.0",
+    "typescript": "2.9.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/australis-technica/load-env.git"
+  },
+  "bugs": {
+    "url": "https://github.com/australis-technica/load-env/issues"
+  },
+  "homepage": "https://github.com/australis-technica/load-env#readme"
+}
