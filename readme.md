@@ -1,6 +1,3 @@
-currently ....
+utility to easy send mails rendered by react with send-grid from file templates from well known location
 
- .env.dev.env   when "developement"  
- .env.prod.env  when "production"  
- .env.test.env  when "test"  
- .env           otherwise
+--templates/*
